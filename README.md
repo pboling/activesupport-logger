@@ -42,7 +42,7 @@
 [🖇patreon-img]: https://img.shields.io/badge/patreon-donate-yellow.svg
 [🖇patreon]: https://patreon.com/galtzo
 
-This is an extraction of Rails' v8 `ActiveSupport::Logger` backported to work with Rails v5.2+ and Ruby 2.7+.
+This is an **unofficial** extraction of Rails' v8 `ActiveSupport::Logger` backported to work with Rails v5.2+ and Ruby 2.7+.
 
 If this gem is loaded by Rails v8+, it does nothing at all.  NOOP.
 

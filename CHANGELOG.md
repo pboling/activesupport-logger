@@ -10,6 +10,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 ### Removed
 
-## [1.0.0] - 2024-10-10
+## [1.0.1] - 2024-10-10
+- COVERAGE:  51.32% -- 39/76 lines in 6 files
+- BRANCH COVERAGE:   5.56% -- 1/18 branches in 6 files
+- 55.56% documented
+### Fixed
+- Typo in internal file name (non-breaking, just annoying/confusing)
 
+## [1.0.0] - 2024-10-10
+- COVERAGE:  51.32% -- 39/76 lines in 6 files
+- BRANCH COVERAGE:   5.56% -- 1/18 branches in 6 files
+- 55.56% documented
+### Added
 - Initial release

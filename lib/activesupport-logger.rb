@@ -7,7 +7,7 @@ require "version_gem"
 
 # This library
 require_relative "activesupport/logger/version"
-byebug
+
 # This gem doesn't do anything unless Rails is < v8
 if ActiveSupport.version < "8"
   # Loads supporting features from Rails v5, 6, or 7

@@ -9,6 +9,7 @@ Activesupport::Logger::Version.send(:remove_const, :VERSION)
 Gem::Specification.new do |spec|
   spec.name = "activesupport-logger"
   spec.version = gem_version
+  # Not listing Rails Team here, as I don't want to imply that this is an official Rails anything.
   spec.authors = ["Peter Boling"]
   spec.email = ["peter.boling@gmail.com"]
 
