@@ -1,0 +1,17 @@
+{
+  "bin/bundle:247448467": [
+    [64, 5, 20, "ThreadSafety/InstanceVariableInClassMethod: Avoid instance variables in class methods.", 2485198147]
+  ],
+  "lib/activesupport/alt_logger_silence_part1.rb:2912700341": [
+    [20, 7, 39, "ThreadSafety/ClassAndModuleAttributes: Avoid mutating class and module attributes.", 4013179979]
+  ],
+  "lib/activesupport/logger.rb:4133231053": [
+    [17, 5, 424, "Style/ClassMethodsDefinitions: Use `class << self` to define a class method.", 3827933310],
+    [45, 5, 3, "Lint/IneffectiveAccessModifier: `private` (on line 43) does not make singleton methods private. Use `private_class_method` or `private` inside a `class << self` block instead.", 193404514],
+    [45, 5, 242, "Style/ClassMethodsDefinitions: Use `class << self` to define a class method.", 2832199221]
+  ],
+  "spec/activesupport/logger_spec.rb:2616039057": [
+    [3, 1, 36, "RSpec/MultipleDescribes: Do not use multiple top-level example groups - try to nest them.", 4074881734],
+    [11, 41, 2, "RSpec/BeEq: Prefer `be` over `eq`.", 5860785]
+  ]
+}
