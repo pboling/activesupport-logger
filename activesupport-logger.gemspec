@@ -12,11 +12,15 @@ Gem::Specification.new do |spec|
   spec.authors = ["Peter Boling"]
   spec.email = ["peter.boling@gmail.com"]
 
+  # See CONTRIBUTING.md
+  spec.cert_chain = [ENV.fetch("GEM_CERT_PATH", "certs/#{ENV.fetch("GEM_CERT_USER", ENV["USER"])}.pem")]
+  spec.signing_key = File.expand_path("~/.ssh/gem-private_key.pem") if $PROGRAM_NAME.end_with?("gem")
+
   spec.summary = "Rails v8 ActiveSupport::Logger backported to Rails v5.2+ & Ruby 2.7+"
   spec.description = "Rails v8 ActiveSupport::Logger backported to Rails v5.2+ & Ruby 2.7+"
   spec.homepage = "https://github.com/pboling/#{spec.name}"
   spec.license = "MIT"
-  spec.required_ruby_version = ">= 2.6.0"
+  spec.required_ruby_version = ">= 2.7.0"
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "#{spec.homepage}/tree/v#{spec.version}"
