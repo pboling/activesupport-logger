@@ -5,6 +5,7 @@
 [![Downloads Today](https://img.shields.io/gem/rd/activesupport-logger.svg)](https://github.com/pboling/activesupport-logger)
 [![CI Supported Build][🚎s-wfi]][🚎s-wf]
 [![CI Unsupported Build][🚎us-wfi]][🚎us-wf]
+[![CI Ancient Build][🚎a-wfi]][🚎a-wf]
 [![CI Style Build][🚎st-wfi]][🚎st-wf]
 [![CI Coverage Build][🚎cov-wfi]][🚎cov-wf]
 [![CI Heads Build][🚎hd-wfi]][🚎hd-wf]
@@ -21,6 +22,8 @@
 [🚎s-wfi]: https://github.com/pboling/activesupport-logger/actions/workflows/supported.yml/badge.svg
 [🚎us-wf]: https://github.com/pboling/activesupport-logger/actions/workflows/unsupported.yml
 [🚎us-wfi]: https://github.com/pboling/activesupport-logger/actions/workflows/unsupported.yml/badge.svg
+[🚎a-wf]: https://github.com/pboling/activesupport-logger/actions/workflows/ancient.yml
+[🚎a-wfi]: https://github.com/pboling/activesupport-logger/actions/workflows/ancient.yml/badge.svg
 [🚎st-wf]: https://github.com/pboling/activesupport-logger/actions/workflows/style.yml
 [🚎st-wfi]: https://github.com/pboling/activesupport-logger/actions/workflows/style.yml/badge.svg
 [🚎cov-wf]: https://github.com/pboling/activesupport-logger/actions/workflows/coverage.yml

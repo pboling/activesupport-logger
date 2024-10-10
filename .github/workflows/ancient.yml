@@ -1,7 +1,4 @@
-name: Unsupported (EOL) Ruby Matrix
-
-env:
-  K_SOUP_COV_DO: false
+name: Ancient (EOL) Rubies
 
 on:
   push:
@@ -30,12 +27,12 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        include:
-          - ruby: "3.0"
-            rubygems:  latest
-            bundler: none
-            gemfile: vanilla
-    runs-on: ubuntu-20.04
+        gemfile:
+          # Skips the gemspec, to avoid the modern development tools which can't be installed on ancient Rubies.
+          - ancient
+        ruby:
+          - "2.7"
+    runs-on: ubuntu-22.04
     continue-on-error: ${{ matrix.experimental || endsWith(matrix.ruby, 'head') }}
     steps:
       - name: Checkout
@@ -43,9 +40,8 @@ jobs:
       - name: Setup Ruby & RubyGems
         uses: ruby/setup-ruby@v1
         with:
+          rubygems:  "3.4.22"
           ruby-version: "${{ matrix.ruby }}"
-          rubygems: "${{ matrix.rubygems }}"
-          bundler: "${{ matrix.bundler }}"
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
       - name: Run tests
         run: bundle exec rake test
