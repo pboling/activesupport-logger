@@ -7,7 +7,7 @@ require "version_gem"
 
 # This library
 require_relative "activesupport/logger/version"
-
+byebug
 # This gem doesn't do anything unless Rails is < v8
 if ActiveSupport.version < "8"
   # Loads supporting features from Rails v5, 6, or 7
@@ -33,7 +33,7 @@ if ActiveSupport.version < "8"
   # https://github.com/rails/rails/blob/main/activesupport/lib/active_support/logger_thread_safe_level.rb
   # This is a straightforward monkey patch.  We can't use part 1,
   #   because it has the `included' block, which can't be monkey patched at all.
-  require_relative "activesupport/alt_logegr_silence_part2"
+  require_relative "activesupport/alt_logger_silence_part2"
 
   # Extracted from:
   # https://github.com/rails/rails/blob/fc62f03ae30fbb9108b004daa9bfedef0401003f/activesupport/lib/active_support/logger.rb
