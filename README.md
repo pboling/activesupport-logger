@@ -1,8 +1,8 @@
 # Activesupport::Logger
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/gem/v/open_id_authentication.svg)](https://rubygems.org/gems/open_id_authentication)
-[![Downloads Today](https://img.shields.io/gem/rd/open_id_authentication.svg)](https://github.com/pboling/activesupport-logger)
+[![Version](https://img.shields.io/gem/v/activesupport-logger.svg)](https://rubygems.org/gems/activesupport-logger)
+[![Downloads Today](https://img.shields.io/gem/rd/activesupport-logger.svg)](https://github.com/pboling/activesupport-logger)
 [![CI Supported Build][🚎s-wfi]][🚎s-wf]
 [![CI Unsupported Build][🚎us-wfi]][🚎us-wf]
 [![CI Style Build][🚎st-wfi]][🚎st-wf]
@@ -92,7 +92,7 @@ But, again, this is handled for you.
 <!-- 7️⃣ spread 💖 -->
 [🐦tweet-img]: https://img.shields.io/twitter/follow/galtzo.svg?style=social&label=Follow%20%40galtzo
 [🐦tweet]: http://twitter.com/galtzo
-[🚎blog]: http://www.railsbling.com/tags/open_id_authentication/
+[🚎blog]: http://www.railsbling.com/tags/activesupport-logger/
 [🚎blog-img]: https://img.shields.io/badge/blog-railsbling-brightgreen.svg?style=flat
 [🖇linkedin]: http://www.linkedin.com/in/peterboling
 [🖇linkedin-img]: https://img.shields.io/badge/PeterBoling-blue?style=plastic&logo=linkedin
