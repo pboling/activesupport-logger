@@ -60,7 +60,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency("kettle-soup-cover", "~> 1.0", ">= 1.0.2")
 
   # Unit tests
-  spec.add_development_dependency("method_source", ">= 1.1.0")
   spec.add_development_dependency("rake", ">= 10")
   spec.add_development_dependency("rspec", "~> 3.13")
   spec.add_development_dependency("rspec-block_is_expected", "~> 1.0", ">= 1.0.6")

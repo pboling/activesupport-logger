@@ -1,6 +1,6 @@
 {
   "bin/bundle:247448467": [
-    [64, 5, 20, "ThreadSafety/InstanceVariableInClassMethod: Avoid instance variables in class methods.", 2485198147]
+    [64, 5, 20, "ThreadSafety/ClassInstanceVariable: Avoid class instance variables.", 2485198147]
   ],
   "lib/activesupport/alt_logger_silence_part1.rb:2912700341": [
     [20, 7, 39, "ThreadSafety/ClassAndModuleAttributes: Avoid mutating class and module attributes.", 4013179979]
