@@ -149,8 +149,6 @@ Load order matters.
 [🐘ruby-mast-img]: https://img.shields.io/mastodon/follow/109447111526622197?domain=https%3A%2F%2Fruby.social&style=plastic&logo=mastodon&label=Ruby%20%40galtzo
 [🌳linktree]: https://linktr.ee/galtzo
 [🌳linktree-img]: https://img.shields.io/badge/galtzo-purple?style=plastic&logo=linktree
-[documentation]: https://rubydoc.info/github/pboling/activesupport-logger
-[homepage]: https://github.com/pboling/activesupport-logger
 
 <!-- Maintainer Contact Links -->
 [aboutme]: https://about.me/peter.boling
