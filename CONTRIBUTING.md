@@ -7,6 +7,63 @@ the [code of conduct][🤝conduct].
 To submit a patch, please fork the project and create a patch with tests.
 Once you're happy with it send a pull request.
 
+## You can help!
+
+Take a look at the `reek` list which is the file called `REEK` and find something to improve.
+
+Simply follow these instructions:
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Make some fixes.
+4. Commit your changes (`git commit -am 'Added some feature'`)
+5. Push to the branch (`git push origin my-new-feature`)
+6. Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
+7. Create new Pull Request.
+
+## Contributors
+
+Your picture could be here!
+
+[![Contributors][🖐contributors-img]][🖐contributors]
+
+Made with [contributors-img][🖐contrib-rocks].
+
+## The Reek List
+
+To refresh the `reek` list:
+
+```bash
+bundle exec reek > REEK
+```
+
+## Appraisal
+
+### Generate a new set of Appraisal gemfiles:
+
+```bash
+BUNDLE_GEMFILE=Appraisal.root.gemfile appraisal update
+```
+
+## Run Tests
+
+```bash
+bundle exec rake test
+```
+
+## Lint It
+
+Run all the default tasks, which includes running the gradually autocorrecting linter, `rubocop-gradual`.
+
+```bash
+bundle exec rake
+```
+
+Or just run the linter.
+```bash
+bundle exec rubocop_gradual:autocorrect
+```
+
 ## Release
 
 ### One-time, Per-developer, Setup
@@ -37,12 +94,6 @@ See: [RubyGems Security Guide][🔒️rubygems-security-guide]
     - Checksums will be committed automatically by the script, but not pushed
 12. Run `bundle exec rake release` which will create a git tag for the version,
     push git commits and tags, and push the `.gem` file to [rubygems.org][💎rubygems]
-
-## Contributors
-
-[![Contributors][🖐contributors-img]][🖐contributors]
-
-Made with [contributors-img][🖐contrib-rocks].
 
 [🧪build]: https://github.com/pboling/activesupport-logger/actions
 [🤝conduct]: https://github.com/pboling/activesupport-logger/blob/main/CODE_OF_CONDUCT.md
