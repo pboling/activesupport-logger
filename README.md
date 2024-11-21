@@ -220,7 +220,7 @@ the [Pessimistic Version Constraint][📌pvc] with two digits of precision.
 For example:
 
 ```ruby
-spec.add_dependency("activesupport-logger", "~> 1.0")
+spec.add_dependency("activesupport-logger", "~> 2.0")
 ```
 
 See [CHANGELOG.md][📌changelog] for list of releases.

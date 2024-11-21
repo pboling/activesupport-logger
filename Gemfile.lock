@@ -13,7 +13,7 @@ PATH
 PATH
   remote: .
   specs:
-    activesupport-logger (1.0.1)
+    activesupport-logger (2.0.0)
       activesupport (>= 5.2)
       backports (~> 3.25, >= 3.25.0)
       logger (~> 1.6, >= 1.6.1)
