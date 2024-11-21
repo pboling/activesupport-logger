@@ -1,7 +1,7 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-Since version 2.0.0, the format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
@@ -10,12 +10,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 ### Removed
 
+## [2.0.1] - 2024-11-21
+- COVERAGE:  95.50% -- 106/111 lines in 6 files
+- BRANCH COVERAGE:  84.00% -- 21/25 branches in 6 files
+- 44.83% documented
+### Added
+- More tests lifted from Rails v8.0 test suite
+### Fixed
+- Compatibility with ActiveSupport
+  - Many libraries do `require "active_support"`
+
 ## [2.0.0] - 2024-11-21
 - COVERAGE:  95.50% -- 106/111 lines in 6 files
 - BRANCH COVERAGE:  84.00% -- 21/25 branches in 6 files
 - 44.83% documented
 ### Added
-- Tests lifted from Rails v8.0 test suite.
+- Tests lifted from Rails v8.0 test suite
 - `ActiveSupport::LoggerSilence`
 - `ActiveSupport::IsolatedExecutionState`
 ### Changed
