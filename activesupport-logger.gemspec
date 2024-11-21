@@ -67,8 +67,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency("kettle-soup-cover", "~> 1.0", ">= 1.0.2")
 
   # Unit tests
-  # NOTE: Will be vendored at spec/vendor for v2
-  # spec.add_development_dependency("activesupport-broadcast_logger", "~> 1.0")
+  spec.add_development_dependency("activesupport-broadcast_logger", "~> 2.0")
   spec.add_development_dependency("appraisal", "~> 2.5")
   spec.add_development_dependency("minitest", "~> 5.25", ">= 5.25.1")
   spec.add_development_dependency("rake", ">= 13")

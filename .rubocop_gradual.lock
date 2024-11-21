@@ -16,6 +16,20 @@
   "lib/activesupport/logger_silence.rb:1739415277": [
     [13, 7, 39, "ThreadSafety/ClassAndModuleAttributes: Avoid mutating class and module attributes.", 4013179979]
   ],
+  "spec/activesupport/clean_logger_spec.rb:3603383161": [
+    [3, 1, 36, "RSpec/SpecFilePathFormat: Spec path should end with `active_support/logger*_spec.rb`.", 2349951270],
+    [6, 15, 21, "RSpec/DescribedClass: Use `described_class` instead of `ActiveSupport::Logger`.", 2155992370],
+    [6, 41, 4, "RSpec/InstanceVariable: Avoid instance variables - use let, a method call, or a local variable (if possible).", 2088885323],
+    [10, 5, 7, "RSpec/InstanceVariable: Avoid instance variables - use let, a method call, or a local variable (if possible).", 842193521],
+    [11, 29, 4, "RSpec/InstanceVariable: Avoid instance variables - use let, a method call, or a local variable (if possible).", 2088885323],
+    [15, 5, 7, "RSpec/InstanceVariable: Avoid instance variables - use let, a method call, or a local variable (if possible).", 842193521],
+    [16, 5, 7, "RSpec/InstanceVariable: Avoid instance variables - use let, a method call, or a local variable (if possible).", 842193521],
+    [17, 5, 7, "RSpec/InstanceVariable: Avoid instance variables - use let, a method call, or a local variable (if possible).", 842193521],
+    [18, 30, 7, "RSpec/InstanceVariable: Avoid instance variables - use let, a method call, or a local variable (if possible).", 842193521],
+    [19, 72, 4, "RSpec/InstanceVariable: Avoid instance variables - use let, a method call, or a local variable (if possible).", 2088885323],
+    [24, 5, 7, "RSpec/InstanceVariable: Avoid instance variables - use let, a method call, or a local variable (if possible).", 842193521],
+    [25, 44, 4, "RSpec/InstanceVariable: Avoid instance variables - use let, a method call, or a local variable (if possible).", 2088885323]
+  ],
   "spec/activesupport/isolated_execution_state_spec.rb:1017146217": [
     [5, 1, 52, "RSpec/SpecFilePathFormat: Spec path should end with `active_support/isolated_execution_state*_spec.rb`.", 2500898234],
     [13, 39, 25, "RSpec/InstanceVariable: Avoid instance variables - use let, a method call, or a local variable (if possible).", 3635063790],
@@ -24,6 +38,19 @@
     [29, 3, 365, "RSpec/ExampleLength: Example has too many lines. [8/5]", 823703444],
     [39, 16, 10, "ThreadSafety/NewThread: Avoid starting new threads.", 3411682361],
     [42, 3, 477, "RSpec/ExampleLength: Example has too many lines. [9/5]", 3500487246]
+  ],
+  "spec/activesupport/logger_silence_spec.rb:298610873": [
+    [3, 1, 43, "RSpec/SpecFilePathFormat: Spec path should end with `active_support/logger_silence*_spec.rb`.", 1277887133],
+    [4, 3, 70, "RSpec/LeakyConstantDeclaration: Stub class constant instead of declaring explicitly.", 2849072819],
+    [10, 28, 3, "RSpec/InstanceVariable: Avoid instance variables - use let, a method call, or a local variable (if possible).", 193449987],
+    [14, 5, 7, "RSpec/InstanceVariable: Avoid instance variables - use let, a method call, or a local variable (if possible).", 842193521],
+    [15, 7, 7, "RSpec/InstanceVariable: Avoid instance variables - use let, a method call, or a local variable (if possible).", 842193521],
+    [17, 5, 3, "RSpec/InstanceVariable: Avoid instance variables - use let, a method call, or a local variable (if possible).", 193449987],
+    [19, 18, 3, "RSpec/InstanceVariable: Avoid instance variables - use let, a method call, or a local variable (if possible).", 193449987],
+    [23, 5, 7, "RSpec/InstanceVariable: Avoid instance variables - use let, a method call, or a local variable (if possible).", 842193521],
+    [25, 5, 7, "RSpec/InstanceVariable: Avoid instance variables - use let, a method call, or a local variable (if possible).", 842193521],
+    [26, 24, 7, "RSpec/InstanceVariable: Avoid instance variables - use let, a method call, or a local variable (if possible).", 842193521],
+    [29, 22, 7, "RSpec/InstanceVariable: Avoid instance variables - use let, a method call, or a local variable (if possible).", 842193521]
   ],
   "spec/activesupport/logger_spec.rb:649226183": [
     [11, 1, 36, "RSpec/MultipleDescribes: Do not use multiple top-level example groups - try to nest them.", 4074881734],
