@@ -23,7 +23,6 @@ require "active_support/core_ext/module/attribute_accessors"
 # https://github.com/rails/rails/blob/540d2f41f6913cd6c5a71301540bfe1551c2acc5/activesupport/test/isolated_execution_state_test.rb
 require_relative "activesupport/isolated_execution_state"
 
-#
 # Extracted from:
 # https://github.com/rails/rails/blob/564e427c05e0d3d24ce8c3ab17ea0969011e056a/activesupport/lib/active_support/logger_thread_safe_level.rb
 # Compare SHA with latest commit to check for changes:
