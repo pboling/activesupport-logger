@@ -35,5 +35,4 @@ require "activesupport-logger"
 
 # The sibling extracted gem is needed because Rails' tests for active_support/logger depend on the active_support/broadcast_logger
 # We have to load it after the gem-under-test because it depends on the gem-under-test (a circular-dev-runtime-dep)
-# Also, because of the circular dependency, in order to have CI passing for the release here we have to vendor:
-require_relative "vendor/activesupport-broadcast_logger"
+require "activesupport-broadcast_logger"
