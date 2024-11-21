@@ -5,7 +5,7 @@
 [![Downloads Today](https://img.shields.io/gem/rd/activesupport-logger.svg)](https://github.com/pboling/activesupport-logger)
 [![CI Supported Build][🚎s-wfi]][🚎s-wf]
 [![CI Unsupported Build][🚎us-wfi]][🚎us-wf]
-[![CI Ancient Build][🚎a-wfi]][🚎a-wf]
+[![CI Legacy Build][🚎lg-wfi]][🚎lg-wf]
 [![CI Style Build][🚎st-wfi]][🚎st-wf]
 [![CI Coverage Build][🚎cov-wfi]][🚎cov-wf]
 [![CI Heads Build][🚎hd-wfi]][🚎hd-wf]
@@ -22,8 +22,8 @@
 [🚎s-wfi]: https://github.com/pboling/activesupport-logger/actions/workflows/supported.yml/badge.svg
 [🚎us-wf]: https://github.com/pboling/activesupport-logger/actions/workflows/unsupported.yml
 [🚎us-wfi]: https://github.com/pboling/activesupport-logger/actions/workflows/unsupported.yml/badge.svg
-[🚎a-wf]: https://github.com/pboling/activesupport-logger/actions/workflows/ancient.yml
-[🚎a-wfi]: https://github.com/pboling/activesupport-logger/actions/workflows/ancient.yml/badge.svg
+[🚎lg-wf]: https://github.com/pboling/activesupport-logger/actions/workflows/legacy.yml
+[🚎lg-wfi]: https://github.com/pboling/activesupport-logger/actions/workflows/legacy.yml/badge.svg
 [🚎st-wf]: https://github.com/pboling/activesupport-logger/actions/workflows/style.yml
 [🚎st-wfi]: https://github.com/pboling/activesupport-logger/actions/workflows/style.yml/badge.svg
 [🚎cov-wf]: https://github.com/pboling/activesupport-logger/actions/workflows/coverage.yml
@@ -42,11 +42,31 @@
 [🖇patreon-img]: https://img.shields.io/badge/patreon-donate-yellow.svg
 [🖇patreon]: https://patreon.com/galtzo
 
-This is an **unofficial** extraction of Rails' v8 `ActiveSupport::Logger` backported to work with Rails v5.2+ and Ruby 2.7+.
+This is an **unofficial** extraction of Rails' v8 `ActiveSupport::Logger`
+backported to work with Rails v5.2+ and Ruby 2.7+.
 
-If this gem is loaded by Rails v8+, it does nothing at all.  NOOP.
+If the suite of gems this is part of is loaded in any version of Rails >= 5.2,
+it will replace the logging tooling completely.
+
+Simplified, the load order is basically:
+
+- Enhanced [activesupport-logger][activesupport-logger] (this gem) which was ripped from Rails v8.0
+- Enhanced [activesupport-broadcast_logger][activesupport-broadcast_logger] which was ripped from Rails v8.0, and [this PR][pr-53093]
+- Enhanced [activesupport-tagged_logging][activesupport-tagged_logging] which was ripped from Rails v8.0, and [this PR][pr-53105]
+
+Above load order is handled for you in [activesupport-tagged_logging][activesupport-tagged_logging] (not this gem),
+so depend on that, not this. ;)
+
+[activesupport-logger]: https://github.com/pboling/activesupport-logger
+[activesupport-broadcast_logger]: https://github.com/pboling/activesupport-broadcast_logger
+[activesupport-tagged_logging]: https://github.com/pboling/activesupport-tagged_logging
+[pr-53105]: https://github.com/rails/rails/pull/53105
+[pr-53093]: https://github.com/rails/rails/pull/53093
 
 ## Installation
+
+NOTE: **Don't do this**.  Instead, use [activesupport-tagged_logging][activesupport-tagged_logging]
+(not this gem, but which uses this gem as a dependency).
 
 Install the gem and add to the application's Gemfile by executing:
 
@@ -57,6 +77,9 @@ If bundler is not being used to manage dependencies, install the gem by executin
     $ gem install activesupport-logger
 
 ## Usage
+
+NOTE: **Don't do this**.  Instead, use [activesupport-tagged_logging][activesupport-tagged_logging]
+(not this gem, but which uses this gem as a dependency, and also configures this gem for you).
 
 ```ruby
 require "activesupport-logger"
@@ -75,26 +98,6 @@ IMPORTANT: If you are using [activesupport-tagged_logging][activesupport-tagged_
 [activesupport-broadcast_logger][activesupport-broadcast_logger],
 **do not require [activesupport-logger][activesupport-logger] in your code.**
 Load order matters.
-
-If the suite of gems this is part of is loaded in any version of Rails >= 5.2,
-it will replace the logging tooling completely.
-
-Simplified, the load order is basically:
-
-- Standard `active_support/logger` from the Rails version loaded by your application
-- Standard `active_support/broadcast_logger` from the Rails version loaded by your application (if any)
-- Standard `active_support/tagged_logging` from the Rails version loaded by your application (if any)
-- Enhanced [activesupport-logger][activesupport-logger] which was ripped from Rails v8.0
-- Enhanced [activesupport-broadcast_logger][activesupport-broadcast_logger] which was ripped from Rails v8.0, and [this PR][pr-53093]
-- Enhanced [activesupport-tagged_logging][activesupport-tagged_logging] which was ripped from Rails v8.0, and [this PR][pr-53105]
-
-But, again, this is handled for you in [activesupport-tagged_logging][activesupport-tagged_logging].
-
-[activesupport-logger]: https://github.com/pboling/activesupport-logger
-[activesupport-broadcast_logger]: https://github.com/pboling/activesupport-broadcast_logger
-[activesupport-tagged_logging]: https://github.com/pboling/activesupport-tagged_logging
-[pr-53105]: https://github.com/rails/rails/pull/53105
-[pr-53093]: https://github.com/rails/rails/pull/53093
 
 ## General Info
 

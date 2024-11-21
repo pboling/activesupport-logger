@@ -48,25 +48,37 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
+  # Extractions from Stdlib (Runtime)
+  spec.add_dependency("logger", "~> 1.6", ">= 1.6.1")
+  spec.add_dependency("mutex_m", "~> 0.1")
+  spec.add_dependency("rdoc", "~> 6.8", ">= 6.8.1")
+  spec.add_dependency("stringio", ">= 0.0.2")
+
   # Runtime Dependencies
   spec.add_dependency("activesupport", ">= 5.2")
+  spec.add_dependency("backports", "~> 3.25", ">= 3.25.0")
   spec.add_dependency("version_gem", "~> 1.1", ">= 1.1.4")
 
   # Documentation
-  spec.add_development_dependency("yard", "~> 0.9", ">= 0.9.34")
+  spec.add_development_dependency("yard", "~> 0.9", ">= 0.9.37")
   spec.add_development_dependency("yard-junk", "~> 0.0.10")
 
   # Coverage
   spec.add_development_dependency("kettle-soup-cover", "~> 1.0", ">= 1.0.2")
 
   # Unit tests
-  spec.add_development_dependency("rake", ">= 10")
+  # NOTE: Will be vendored at spec/vendor for v2
+  # spec.add_development_dependency("activesupport-broadcast_logger", "~> 1.0")
+  spec.add_development_dependency("appraisal", "~> 2.5")
+  spec.add_development_dependency("minitest", "~> 5.25", ">= 5.25.1")
+  spec.add_development_dependency("rake", ">= 13")
   spec.add_development_dependency("rspec", "~> 3.13")
   spec.add_development_dependency("rspec-block_is_expected", "~> 1.0", ">= 1.0.6")
+  spec.add_development_dependency("rspec-pending_for", "~> 0.1", ">= 0.1.16")
+  spec.add_development_dependency("test-unit", "~> 3.6", ">= 3.6.2")
 
   # Linting
-  spec.add_development_dependency("rubocop-lts", "~> 10.1") # Lint & Style Support for Ruby 2.3+
+  spec.add_development_dependency("rubocop-lts", "~> 18.2", ">= 18.2.1") # Lint & Style Support for Ruby 2.7+
   spec.add_development_dependency("rubocop-packaging", "~> 0.5", ">= 0.5.2")
   spec.add_development_dependency("rubocop-rspec", "~> 3.0")
-  spec.add_development_dependency("standard", "~> 1.40")
 end

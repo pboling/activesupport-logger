@@ -7,3 +7,7 @@ source "https://rubygems.org"
 # Exceptions, if any, will be found in gemfiles/*.gemfile
 
 gemspec path: "../"
+
+# Linting
+gem "standard", "~> 1.42", ">= 1.42.1" # Ruby >= 3.0
+gem "reek", "~> 6.3", ">= 6.3.0" # Ruby >= 3.0

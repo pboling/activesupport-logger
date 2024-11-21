@@ -1,9 +1,15 @@
 # frozen_string_literal: true
 
+# Std Lib
+require "logger"
+
+# Extracted from Rails v8.0
+require_relative "logger_silence"
+require_relative "logger_thread_safe_level"
+
 module ActiveSupport
   class Logger < ::Logger
-    # The line below is handled by activesupport-logger.rb
-    # include AltLoggerSilencePart2 (& Part1 can't be used)
+    include LoggerSilence
 
     # Returns true if the logger destination matches one of the sources
     #
@@ -15,7 +21,11 @@ module ActiveSupport
     #   ActiveSupport::Logger.logger_outputs_to?(logger, '/var/log/rails.log')
     #   # => true
     def self.logger_outputs_to?(logger, *sources)
-      loggers = if logger.is_a?(BroadcastLogger)
+      # NOTE: This is the only line altered for this gem.
+      #       We can't risk this gem loading the vanilla BroadcastLogger via autoload
+      #       But we also can't make this gem depend on activesupport/broadcast_logger,
+      #         as that would be a circular dependency.
+      loggers = if defined?(BroadcastLogger) && logger.is_a?(BroadcastLogger)
         logger.broadcasts
       else
         [logger]

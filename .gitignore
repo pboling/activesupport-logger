@@ -7,7 +7,24 @@
 /spec/reports/
 /tmp/
 
+# Old version manager files
+/.ruby-version
+/.ruby-gemset
+
+# direnv - brew install direnv
 .env.*
+
+# Build artifacts
+*.gem
+
+# IDEs
+/.idea/
+
+# Apprasial
+*.gemfile.lock
 
 # rspec failure tracking
 .rspec_status
+
+# Debugging
+.byebug_history

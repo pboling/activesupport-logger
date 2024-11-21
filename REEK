@@ -1,0 +1,33 @@
+spec/activesupport/logger_spec.rb -- 1 warning:
+  [450, 450]:DuplicateMethodCall: assert_level calls '@logger.level' 2 times [https://github.com/troessner/reek/blob/v6.3.0/docs/Duplicate-Method-Call.md]
+spec/support/helpers/multibyte_test_helpers.rb -- 3 warnings:
+  [1]:IrresponsibleModule: MultibyteTestHelpers has no descriptive comment [https://github.com/troessner/reek/blob/v6.3.0/docs/Irresponsible-Module.md]
+  [6]:UtilityFunction: MultibyteTestHelpers#chars doesn't depend on instance state (maybe move it to another class?) [https://github.com/troessner/reek/blob/v6.3.0/docs/Utility-Function.md]
+  [10]:UtilityFunction: MultibyteTestHelpers#inspect_codepoints doesn't depend on instance state (maybe move it to another class?) [https://github.com/troessner/reek/blob/v6.3.0/docs/Utility-Function.md]
+spec/vendor/activesupport/broadcast_logger.rb -- 7 warnings:
+  [79]:Attribute: ActiveSupport::BroadcastLogger#progname is a writable attribute [https://github.com/troessner/reek/blob/v6.3.0/docs/Attribute.md]
+  [208, 210, 211, 213]:FeatureEnvy: ActiveSupport::BroadcastLogger#method_missing refers to 'loggers' more than self (maybe move it to another class?) [https://github.com/troessner/reek/blob/v6.3.0/docs/Feature-Envy.md]
+  [199]:ManualDispatch: ActiveSupport::BroadcastLogger#dispatch manually dispatches method call [https://github.com/troessner/reek/blob/v6.3.0/docs/Manual-Dispatch.md]
+  [206]:ManualDispatch: ActiveSupport::BroadcastLogger#method_missing manually dispatches method call [https://github.com/troessner/reek/blob/v6.3.0/docs/Manual-Dispatch.md]
+  [218]:ManualDispatch: ActiveSupport::BroadcastLogger#respond_to_missing? manually dispatches method call [https://github.com/troessner/reek/blob/v6.3.0/docs/Manual-Dispatch.md]
+  [183]:TooManyStatements: ActiveSupport::BroadcastLogger#dispatch has approx 7 statements [https://github.com/troessner/reek/blob/v6.3.0/docs/Too-Many-Statements.md]
+  [205]:TooManyStatements: ActiveSupport::BroadcastLogger#method_missing has approx 6 statements [https://github.com/troessner/reek/blob/v6.3.0/docs/Too-Many-Statements.md]
+lib/activesupport/isolated_execution_state.rb -- 4 warnings:
+  [7]:Attribute: ActiveSupport::IsolatedExecutionState#active_support_execution_state is a writable attribute [https://github.com/troessner/reek/blob/v6.3.0/docs/Attribute.md]
+  [8]:Attribute: ActiveSupport::IsolatedExecutionState#active_support_execution_state is a writable attribute [https://github.com/troessner/reek/blob/v6.3.0/docs/Attribute.md]
+  [4]:IrresponsibleModule: ActiveSupport::IsolatedExecutionState has no descriptive comment [https://github.com/troessner/reek/blob/v6.3.0/docs/Irresponsible-Module.md]
+  [13]:TooManyStatements: ActiveSupport::IsolatedExecutionState#isolation_level= has approx 6 statements [https://github.com/troessner/reek/blob/v6.3.0/docs/Too-Many-Statements.md]
+lib/activesupport/logger.rb -- 8 warnings:
+  [11]:IrresponsibleModule: ActiveSupport::Logger has no descriptive comment [https://github.com/troessner/reek/blob/v6.3.0/docs/Irresponsible-Module.md]
+  [48]:LongParameterList: ActiveSupport::Logger::SimpleFormatter#call has 4 parameters [https://github.com/troessner/reek/blob/v6.3.0/docs/Long-Parameter-List.md]
+  [57]:ManualDispatch: ActiveSupport::Logger#self.normalize_sources manually dispatches method call [https://github.com/troessner/reek/blob/v6.3.0/docs/Manual-Dispatch.md]
+  [23]:TooManyStatements: ActiveSupport::Logger#self.logger_outputs_to? has approx 7 statements [https://github.com/troessner/reek/blob/v6.3.0/docs/Too-Many-Statements.md]
+  [48]:UnusedParameters: ActiveSupport::Logger::SimpleFormatter#call has unused parameter 'progname' [https://github.com/troessner/reek/blob/v6.3.0/docs/Unused-Parameters.md]
+  [48]:UnusedParameters: ActiveSupport::Logger::SimpleFormatter#call has unused parameter 'severity' [https://github.com/troessner/reek/blob/v6.3.0/docs/Unused-Parameters.md]
+  [48]:UnusedParameters: ActiveSupport::Logger::SimpleFormatter#call has unused parameter 'timestamp' [https://github.com/troessner/reek/blob/v6.3.0/docs/Unused-Parameters.md]
+  [48]:UtilityFunction: ActiveSupport::Logger::SimpleFormatter#call doesn't depend on instance state (maybe move it to another class?) [https://github.com/troessner/reek/blob/v6.3.0/docs/Utility-Function.md]
+lib/activesupport/logger_silence.rb -- 1 warning:
+  [9]:IrresponsibleModule: ActiveSupport::LoggerSilence has no descriptive comment [https://github.com/troessner/reek/blob/v6.3.0/docs/Irresponsible-Module.md]
+lib/activesupport/logger_thread_safe_level.rb -- 1 warning:
+  [20, 24]:NilCheck: ActiveSupport::LoggerThreadSafeLevel#local_level= performs a nil-check [https://github.com/troessner/reek/blob/v6.3.0/docs/Nil-Check.md]
+25 total warnings
