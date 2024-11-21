@@ -1,9 +1,9 @@
 PATH
   remote: ../activesupport-broadcast_logger
   specs:
-    activesupport-broadcast_logger (1.0.0)
+    activesupport-broadcast_logger (2.0.0)
       activesupport (>= 5.2)
-      activesupport-logger (~> 1.0, >= 1.0.1)
+      activesupport-logger (~> 2.0, >= 2.0.0)
       logger (~> 1.6, >= 1.6.1)
       mutex_m (~> 0.1)
       rdoc (~> 6.8, >= 6.8.1)
