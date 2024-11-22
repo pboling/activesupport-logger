@@ -241,7 +241,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activesupport-broadcast_logger (~> 2.0)
+  activesupport-broadcast_logger (~> 2.0, >= 2.0.1)
   activesupport-logger!
   appraisal (~> 2.5)
   byebug (>= 11)
