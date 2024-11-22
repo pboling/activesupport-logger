@@ -10,6 +10,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 ### Removed
 
+## [2.0.3] - 2024-11-22
+- COVERAGE:  95.50% -- 106/111 lines in 6 files
+- BRANCH COVERAGE:  84.00% -- 21/25 branches in 6 files
+- 44.83% documented
+### Removed
+- rdoc as runtime dependency
+### Changed
+- upgrade activesupport-broadcast_logger v2.0.2
+
 ## [2.0.2] - 2024-11-22
 - COVERAGE:  95.50% -- 106/111 lines in 6 files
 - BRANCH COVERAGE:  84.00% -- 21/25 branches in 6 files
